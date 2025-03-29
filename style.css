@@ -1,0 +1,92 @@
+/* Define the local fonts */
+@font-face {
+    font-family: 'Eina 03 Bold';
+    src: url('eina-03-bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Aceh Light';
+    src: url('Aceh-Light.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility; /* Improve font rendering */
+}
+
+body {
+    background-color: black;
+    color: #AAA6A4;
+    font-family: 'Aceh Light', sans-serif; /* Default font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased; /* For Webkit browsers like Safari */
+}
+
+.container {
+    background-color: black;
+    border: 2px solid #444;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Eina 03 Bold', sans-serif; /* Applying Eina 03 Bold */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1px; /* Slightly adjust letter spacing */
+    line-height: 1.2; /* Adjust line height for readability */
+}
+
+p {
+    font-family: 'Aceh Light', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Slightly increase line height */
+}
+
+textarea {
+    width: 85%;  /* Make the width greater than the height */
+    height: 100px;  /* Set a fixed height */
+    background-color: #1b1b1b; /* Slightly lighter than background */
+    color: white;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Eina 03 Bold', sans-serif; /* Using Eina 03 Bold for textarea */
+    font-weight: bold;
+    margin-bottom: 20px;
+    resize: none; /* Prevent resizing */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Disable scrolling */
+    letter-spacing: 0.5px; /* Adjust letter spacing for more natural look */
+    line-height: 1.4; /* Adjust line height for better readability */
+}
+
+button {
+    width: 95%; /* Set button width to 95% of the textarea width */
+    background-color: #1b1b1b; /* Slightly lighter than background */
+    color: white;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: 'Eina 03 Bold', sans-serif; /* Using Eina 03 Bold for button */
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px; /* Ensure it’s directly under the textarea */
+    letter-spacing: 0.5px; /* Adjust letter spacing for more natural look */
+    line-height: 1.4; /* Make text in the button appear cleaner */
+}
+
+button:hover {
+    background-color: #444;
+}
